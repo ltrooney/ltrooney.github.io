@@ -1,0 +1,483 @@
+/* GENERAL */
+* {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: black;
+	scroll-behavior: smooth;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	letter-spacing: 1px;
+	line-height: 1.75;
+	font-size: 1.25em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #d9d9d9;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+main {
+	padding-top: 30px; 
+	background-color: white;
+}
+
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.section {
+	padding-top: 20px;
+}
+
+.section-header {
+	position: relative;
+	text-align: center;
+	margin: 30px 0;
+}
+.section-header:before {
+  content: "";
+  display: block;
+  border-top: solid 2px lightgrey;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.section-header span {
+  background: #fff;
+  padding: 0 10px;
+  position: relative;
+  z-index: 5;
+  text-transform: uppercase;
+}
+
+/* Bootstrap Overrides */
+.row {
+	padding-right: 0;
+	padding-left: 0;
+  	margin-left: 0px;
+  	margin-right: 0px;
+}
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.btn {
+	width: 100%;
+	font-size: 1.3em;
+}
+
+.btn-lg {
+	border-radius: 2px;
+	padding: .75rem 1.5rem;
+	/*font-size: 1em;*/
+}
+
+.btn-dark {
+	font-family: 'Raleway', sans-serif;
+	color: #d9d9d9;
+	background-color: transparent;
+	border: 1px solid #d9d9d9;
+	text-transform: uppercase;
+}
+
+.btn-dark:hover {
+	background-color: white;
+	border-color: white;
+	color: black;
+}
+
+.btn:focus { box-shadow: none; }
+
+.modal-content {
+	background-color: #222;
+	color: white;
+}
+
+.modal-header {
+	border-bottom: 1px solid #888;
+}
+
+.close {
+	color: white;
+	font-size: 3.5em;
+	line-height: .75;
+	text-shadow: none;
+	opacity: .3;
+}
+
+.close:not(:disabled):not(.disabled):focus, 
+.close:not(:disabled):not(.disabled):hover{
+	color: white;
+	opacity: 1;
+}
+
+/* NAVBAR */
+
+nav.navbar{
+   -webkit-transition: all 0.2s ease;
+   transition: all 0.2s ease;
+}
+
+.navbar-inverse { background: rgba(0, 0, 0, 0.85); }
+
+.navbar-dark .navbar-nav .nav-link {
+	font-size: 1.5em;
+	color: #d9d9d9;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	border-bottom: 2px solid transparent;
+	position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-item.active a,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: white;
+	text-shadow: 0 1px 8px #aa80ff;
+}
+
+.navbar-dark .navbar-nav .nav-link:after {
+	content: '';
+	position: absolute;
+	border-bottom: 2px solid #aa80ff;
+	bottom: 0;
+	left: 0;
+	right: 100%;
+	color: #aa80ff;
+	transition: all 500ms;
+}
+
+.navbar-dark .navbar-nav .nav-item.active a:after { border-bottom: 0; }
+
+.navbar-dark .navbar-nav .nav-item.active a,
+.navbar-dark .navbar-nav .nav-link:hover:after {
+	border-image: linear-gradient(to left, orange 0%, #aa80ff 100%) 0 0 50% 0/0 0 2px 0 stretch;
+	right: 0;
+}
+
+
+/* BANNER */
+html,
+body,
+header,
+#intro { height: 100%; }
+
+#intro {
+	background: url('images/space_background.jpg');
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#intro p { color: #d9d9d9; }
+
+#tint {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	z-index: 0;
+}
+
+.space-header {
+	font-family: 'Gugi', cursive;
+	background: linear-gradient(to left, darkorange 0%, #884dff 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-text-stroke: 2px #2a2a2a;
+  	filter: drop-shadow(2px 2px #d9d9d9);
+  	text-transform: uppercase;
+}
+
+#down {
+	position: absolute;
+	bottom: 15px;
+}
+
+#banner-arrow-down {
+	color: #d9d9d9;
+	opacity: 0.2;
+}
+
+#banner-arrow-down:hover {
+	border-color: #d9d9d9;
+	color: white;
+	opacity: 1;
+	text-shadow: 0 1px 40px white;
+}
+
+/* ABOUT */
+
+#about img {
+	border-radius: 50%;
+}
+
+#my-info h5 {
+	font-size: 1.1em;
+	line-height: 1.75;
+}
+
+#topics-lg h5,
+#info-sm span {
+	font-weight: 600;
+}
+
+/* EXPERIENCE */
+
+.show-btn {
+  	z-index: 100;
+  	border: 2px solid black;
+  	border-radius: 3px;
+  	color: black;
+}
+
+.show-btn:hover {
+	border: 2px solid black;
+	background-color: black;
+	color: white;
+}
+
+.hide {
+	display: none;
+}
+
+#experience {
+	position: relative;
+}
+
+#experiences {
+	position: relative;
+	overflow: hidden;
+}
+
+
+#experience .btn {
+	color: black;
+	border: 2px solid black;
+	margin: 0 auto;
+	display: block;
+}
+
+#experience .btn:hover {
+	color: white;
+	background-color: black;
+	border: 2px solid black;
+}
+
+#experience h6 {
+	font-size: 1.15em;
+	margin-bottom: 0;
+}
+
+/* PROJECTS */
+#portfolio-wrapper {
+	background-color: #222;
+	-moz-box-shadow:    inset 0 0 20px #000;
+   	-webkit-box-shadow: inset 0 0 20px #000;
+   	box-shadow:         inset 0 0 20px #000;
+}
+
+/* carousel */
+
+.slick-dots li {
+	margin-right: 3px;
+	height: 12px;
+}
+.slick-dots li button {
+	background-color: black;
+	border-radius: 50%;
+	padding: 0;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #ccc;
+}
+.slick-dots .slick-active button { background-color: white; }
+.slick-dots li button::before { content: ""; }
+
+.single_portfolio_text{
+	display:inline-block;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+
+.single_portfolio_text img{ width:100%; }
+	
+
+/* remove below comment drop on hover is desired */
+.single_portfolio_text/*:hover*/ .portfolio_images_overlay{
+	top:5%;
+	left: 5%;
+}
+
+.portfolio_images_overlay {
+	width: 90%;
+	height: 90%;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 15px;
+	margin: 0 auto;
+	top: -100%;
+	left: 5%;
+	position: absolute;
+	transition:.6s;
+	
+}
+.portfolio_images_overlay .space-header-wrapper {
+	height: 45%;
+	border: 1px solid #fff;
+	padding: 8px 4px;
+}
+.portfolio_images_overlay .space-header {
+	font-size: 1.6em;
+	margin: 0 auto;
+	filter: drop-shadow(1px 1px #d9d9d9);
+	-webkit-text-stroke: 1px #2a2a2a;
+}
+
+.portfolio_images_overlay .space-header.small {
+	font-size: 1.4em;
+}
+
+.portfolio_images_overlay .dates {
+	font-size: 1em;
+	color: #fff;
+	line-height: 1;
+	margin: 20px 0;
+}
+
+.portfolio_images_overlay .btn {
+	font-size: 1.1em;
+	padding: 7px 10px;
+	width: 75%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 15px;
+}
+
+.modal-header h5 { 
+	font-family: 'Gugi'; 
+	text-transform: uppercase; 
+	background-image: -webkit-linear-gradient(to bottom, white, #d9d9d9, grey); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(to bottom, white, #d9d9d9, grey); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(to bottom, white, #d9d9d9, grey); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(to bottom, white, #d9d9d9, grey); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to bottom, white, #d9d9d9, grey); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: drop-shadow(1px 2px 5px #555);
+    font-size: 1.5em;
+}
+
+.modal-body a {	color: white; }
+
+.modal-body a:hover { color: #aa80ff; }
+
+.modal-body h6 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.modal-body p {
+	line-height: 1.5;
+	margin: 0;
+}
+
+.project-section {
+	margin-bottom: 20px;
+}
+
+/* FAQS */
+#faqs h6 {
+	font-size: 1.25em;
+	line-height: 1.75;
+}
+
+/* CONTACT */
+
+.footer {
+	padding: 15px;
+	background-color: #222;
+	color: #d9d9d9;
+}
+
+.contact-ic { color: #d9d9d9; }
+.contact-ic:hover { color: #aa80ff; }
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 577px) { 
+	p {
+		font-size: 1em;
+		letter-spacing: 0.5px;
+	}
+	.btn {
+		width: 40%;
+		font-size: 1em;
+	}
+	.section-header span {padding: 0 20px;}
+	#experience .btn {width: 30%;}
+	.portfolio_images_overlay .space-header {font-size: 1.75em;}
+  	.portfolio_images_overlay .btn {font-size: 1em;}
+  	.close {font-size: 2.5em;} 
+  	#faqs h6 {font-size: 1em;}
+  }
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+	.navbar-dark .navbar-nav .nav-link {font-size: .8em;}
+	.btn {width: 80%;}
+	.portfolio_images_overlay .space-header {font-size: 1.1em;}
+	.portfolio_images_overlay .space-header.small { font-size: 1em; }
+	.portfolio_images_overlay .dates {font-size: .8em;}
+	.portfolio_images_overlay .btn {font-size: .8em;}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.navbar-dark .navbar-nav .nav-link { font-size: .9em; }
+	.btn {width: 50%;}
+	.portfolio_images_overlay .space-header {font-size: 1.25em;}
+	.portfolio_images_overlay .space-header.small { font-size: 1.1em; }
+	.portfolio_images_overlay .dates {font-size: .9em;}
+}
+
+@media (min-width: 1024px) {
+	.portfolio_images_overlay .space-header {font-size: 1.25em;}
+	.portfolio_images_overlay .space-header.small { font-size: 1.25em; }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  	.portfolio_images_overlay .space-header {font-size:1.7em;} 
+  	.portfolio_images_overlay .space-header.small { font-size: 1.5em; }
+  	.portfolio_images_overlay .dates {
+  		font-size: 1.1em;
+  		margin: 30px 0;
+  	}
+  	.portfolio_images_overlay .btn { font-size: 1.1em; }
+}
