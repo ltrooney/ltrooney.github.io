@@ -261,25 +261,25 @@ header,
 	display: none;
 }
 
-#experience-container {
+#experience {
 	position: relative;
 }
 
 
-#experience-container .btn {
+#experience .btn {
 	color: black;
 	border: 2px solid black;
 	margin: 0 auto;
 	display: block;
 }
 
-#experience-container .btn:hover {
+#experience .btn:hover {
 	color: white;
 	background-color: black;
 	border: 2px solid black;
 }
 
-#experience-container h6 {
+#experience h6 {
 	font-size: 1.15em;
 	margin-bottom: 0;
 }
@@ -440,7 +440,7 @@ header,
 		font-size: 1em;
 	}
 	.section-header span {padding: 0 20px;}
-	#experience-container .btn {width: 30%;}
+	#experience .btn {width: 30%;}
 	.portfolio_images_overlay .space-header {font-size: 1.75em;}
   	.portfolio_images_overlay .btn {font-size: 1em;}
   	.close {font-size: 2.5em;} 
