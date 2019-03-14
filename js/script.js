@@ -97,35 +97,72 @@ jQuery(document).ready(function($) {
 						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
 					}
 				]
-			}
+			},
+			experience: [
+				{ 
+					imgSrc: "css/images/jpl.jpg",
+					imgAlt: "JPL Logo",
+					institution: "Jet Propulsion Laboratory",
+					jobTitle: "Electrical Systems Engineering",
+					dates: "September 2016 - July 2018",
+					description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+				},
+				{ 
+					imgSrc: "css/images/coc.png",
+					imgAlt: "COC Logo",
+					institution: "College of the Canyons",
+					jobTitle: "College Assistant - Financial Aid",
+					dates: "September 2016 - July 2018",
+					description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+				}
+			],
+			faqs: [
+				{
+					question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+					answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				},
+				{
+					question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+					answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				},
+				{
+					question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+					answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				},
+				{
+					question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+					answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				}
+			]
 		};
 
-	var modalPrefix = "project-modal-";
+	var modalPrefix = "project-modal";
 
 	// parse data for projects section
 	var projectsJSON = json.projects;
   	projectsJSON.previews.forEach(function(previewData) {
-  		var html = `<div class='single_portfolio_text mx-2'>
-  						<img src="` + previewData.imgSrc + `" />
-						<div class='portfolio_images_overlay text-center my-auto'>
-  							<div class='space-header-wrapper d-flex align-items-center'>
-  								<h6 class='space-header gallery-text'>` + previewData.title + `</h6>
-							</div>
-  							<p class='dates'>` + previewData.dates + `</p>
-  							<button type='button' class='btn btn-dark btn-lg' data-toggle='modal' data-target='#` + modalPrefix + previewData.id + `'>View</button>
-  						</div>
-  					</div>"`;
+  		var html = 
+  		`<div class='single_portfolio_text mx-2'>
+			<img src="${previewData.imgSrc}" />
+			<div class='portfolio_images_overlay text-center my-auto'>
+				<div class='space-header-wrapper d-flex align-items-center'>
+					<h6 class='space-header gallery-text'>${previewData.title}</h6>
+				</div>
+				<p class='dates'>${previewData.dates}</p>
+				<button type='button' class='btn btn-dark btn-lg' data-toggle='modal' data-target='#${modalPrefix}-${previewData.id}'>View</button>
+			</div>
+		</div>"`;
 
   		$('#project-previews').append(html);
   	});
 
   	projectsJSON.modals.forEach(function(modalData) {
   		var html = 
-  		`<div class="modal fade" id="` + modalPrefix + modalData.id + `" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  		`<div class="modal fade" id="${modalPrefix}-${modalData.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	        <div class="modal-dialog modal-dialog-centered" role="document">
 	          <div class="modal-content">
 	            <div class="modal-header">
-	              <h5 class="modal-title" id="exampleModalLabel">` + modalData.title + `</h5>
+	              <h5 class="modal-title" id="exampleModalLabel">${modalData.title}</h5>
 	              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	                <span aria-hidden="true">&times;</span>
 	              </button>
@@ -136,18 +173,18 @@ jQuery(document).ready(function($) {
 	            	html += 
 	            	`<div class="project-section">
 		                <h6>Project Links</h6>
-		            	<a href="https://` + modalData.githubLink + `"><i class="fab fa-github mr-2"></i>` + modalData.githubLink +`</a>
+		            	<a href="https://${modalData.githubLink}"><i class="fab fa-github mr-2"></i>${modalData.githubLink}</a>
 		             </div>`;
 	            }
 	             
 	            html +=  
 	              `<div class="project-section">
 	                <h6>Skills</h6>
-	                <p>` + modalData.skills + `</p>
+	                <p>${modalData.skills}</p>
 	              </div>
 	              <div class="project-section">
 	                <h6>Description</h6>
-	                <p>` + modalData.description + `</p>
+	                <p>${modalData.description}</p>
 	              </div>
 	            </div>
 	            <div class="modal-footer justify-content-centerw">
@@ -157,6 +194,37 @@ jQuery(document).ready(function($) {
 	        </div>
 	      </div>`;
   		$('#projects').append(html);
+  	});
+
+  	json.experience.forEach(function(experienceData) {
+  		var html = 
+  		`<div class="row mb-4">
+          <div class="col-lg-8 col-md-12 col-centered">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12 mb-4 text-center">
+                <img class="img-fluid" src="${experienceData.imgSrc}" alt="${experienceData.imgAlt}">
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                <h4><strong>${experienceData.institution}</strong></h4>
+                <h6>${experienceData.title}</h6>
+                <i>${experienceData.dates}</i>
+                <p class="mt-2">${experienceData.description}</p>
+              </div>
+            </div>
+          </div>
+        </div>`;
+        $('#experiences').append(html);
+  	});
+
+  	json.faqs.forEach(function(faq) {
+  		var html =
+  		`<div class="row">
+	        <div class="col-lg-8 col-md-10 col-centered my-2">
+	          <h6 class="font-weight-bold">Q: ${faq.question}</h6>
+	          <h6>A: ${faq.answer}</h6> 
+	        </div>
+      	</div>`;
+  		$('#faqs').append(html);
   	});
 
   	// slick carousel
