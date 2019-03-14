@@ -47,9 +47,9 @@ jQuery(document).ready(function($) {
 			projects: {
 				previews: [
 					{ id: "01", title: "Autonomous Quadcopter",	dates: "Jul 2017 - Jan 2019",	imgSrc: "https://graysonhobby.com/media/catalog/category/FPV-Drone-Racer.jpg"},
-					{ id: "02", title: "Music Theory App",		dates: "Jul 2017 - Jan 2019",	imgSrc: "http://i.imgur.com/uX3g4Nl.png" },
+					{ id: "02", title: "Music Theory App",		dates: "Jul 2017 - Jan 2019",	imgSrc: "css/images/music.png" },
 					{ id: "03", title: "Hack Computer",			dates: "Jul 2017 - Jan 2019",	imgSrc: "https://onlinejpgtools.com/images/examples-onlinejpgtools/random-grid.jpg" },
-					{ id: "04", title: "JAVA Physics Engine",	dates: "Jul 2017 - Jan 2019",	imgSrc: "http://i.imgur.com/uX3g4Nl.png" },
+					{ id: "04", title: "JAVA Physics Engine",	dates: "Jul 2017 - Jan 2019",	imgSrc: "css/images/physics.jpg" },
 					{ id: "05", title: "Pacman AI Agent",		dates: "January 2019", 			imgSrc: "https://androidapksfree.com/wp-content/uploads/2016/12/PAC-MAN-apk.png"},
 					{ id: "06", title: "This Website",			dates: "Dec 2018 - Mar 2019", 	imgSrc: "css/images/code.jpeg"}
 				],

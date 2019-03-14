@@ -299,9 +299,11 @@ header,
 
 /* carousel */
 
+.slick-dots {
+	bottom: -35px;
+}
 .slick-dots li {
 	margin-right: 3px;
-	height: 12px;
 }
 .slick-dots li button {
 	background-color: black;
@@ -311,10 +313,13 @@ header,
 	height: 12px;
 	border: 1px solid #ccc;
 }
-.slick-dots .slick-active button { background-color: white; }
+.slick-dots .slick-active button { 
+	background-color: white; 
+	box-shadow: 0 0 10px #ccc;
+}
 .slick-dots li button::before { content: ""; }
 
-.single_portfolio_text{
+.single_portfolio_text {
 	display:inline-block;
 	padding:0;
 	position:relative;
