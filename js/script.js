@@ -232,7 +232,7 @@ jQuery(document).ready(function($) {
 		dots: true,
 		slidesToShow: 7,
 		autoplay: true,
-		autoplaySpeed: 350000,
+		autoplaySpeed: 3000,
 		responsive: [
 		{
 		  breakpoint: 2000,

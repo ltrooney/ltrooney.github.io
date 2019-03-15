@@ -198,7 +198,9 @@ header,
 	position: absolute;
 	z-index: 0;
 }
-
+#projects {
+	overflow: hidden;
+}
 .space-header {
 	font-family: 'Gugi', cursive;
 	background: linear-gradient(to left, darkorange 0%, #884dff 100%);
