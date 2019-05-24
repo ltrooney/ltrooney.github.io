@@ -24,24 +24,6 @@ jQuery(document).ready(function($) {
 	  	});        
 	});
 
-	// work experience toggle
-	var show_more = true;
-	$('#toggle_button').click(function() {
-		if(show_more) {
-			// add divs
-			$('.hide').addClass('show').removeClass('hide');
-			document.getElementById("toggle_button").innerText = "Show Less";			
-			show_more = false;
-		} else {
-			// remove div
-			$('.show').addClass('hide').removeClass('show');
-			document.getElementById("toggle_button").innerText = "Show More";
-			show_more = true;
-		}
-	});
-
-	
-
 	var json = 
 		{
 			projects: [
@@ -61,11 +43,11 @@ jQuery(document).ready(function($) {
 					}	
 				},
 				{
-					enabled: true,
+					enabled: false,
 					id: "02",
 					title: "Music Theory App",
 					preview: {
-						dates: "Jul 2017 - Jan 2019",
+						dates: "Jul 20178",
 						imgSrc: "css/images/music.png"
 					},
 					modal: {
@@ -80,7 +62,7 @@ jQuery(document).ready(function($) {
 					id: "03",
 					title: "Hack Computer",
 					preview: {
-						dates: "Jul 2017 - Jan 2019",
+						dates: "Jul 2017 - Sept 2017",
 						imgSrc: "https://onlinejpgtools.com/images/examples-onlinejpgtools/random-grid.jpg"
 					},
 					modal: {
@@ -93,7 +75,7 @@ jQuery(document).ready(function($) {
 				{
 					enabled: true,
 					id: "04",
-					title: "JAVA Physics Engine",
+					title: "Java Physics Engine",
 					preview: {
 						dates: "Jul 2017 - Jan 2019",
 						imgSrc: "css/images/physics.jpg"
@@ -125,13 +107,58 @@ jQuery(document).ready(function($) {
 					id: "06",
 					title: "This Website",
 					preview: {
-						dates: "Dec 2018 - Mar 2019",
+						dates: "Dec 2018 - May 2019",
 						imgSrc: "css/images/code.jpeg"
 					},
 					modal: {
 						isPrivate: false,
 						githubLink: "github.com/ltrooney/luke-rooney-website",
 						skills: "C++, Arduino, PID Controller, Motors, Power Systems",
+						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+					}	
+				},
+				{
+					enabled: true,
+					id: "07",
+					title: "Bear Maps",
+					preview: {
+						dates: "March 2019",
+						imgSrc: "css/images/bearmaps.png"
+					},
+					modal: {
+						isPrivate: true,
+						githubLink: null,
+						skills: "Java, Priority Queues, K-d Trees",
+						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+					}	
+				},
+				{
+					enabled: true,
+					id: "08",
+					title: "16-bit Adventure Game",
+					preview: {
+						dates: "April 2019",
+						imgSrc: "css/images/avatar.png"
+					},
+					modal: {
+						isPrivate: true,
+						githubLink: null,
+						skills: "Java, Minimum Spanning Trees, Dijkstra's Algorithm, Disjoint Sets",
+						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+					}	
+				},
+				{
+					enabled: true,
+					id: "09",
+					title: "Quadcopter Motion Simulation",
+					preview: {
+						dates: "Mar 2019 - Apr 2019",
+						imgSrc: "css/images/code.jpeg"
+					},
+					modal: {
+						isPrivate: false,
+						githubLink: "github.com/ltrooney/quadcopter",
+						skills: "Matlab",
 						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
 					}	
 				},
@@ -142,23 +169,19 @@ jQuery(document).ready(function($) {
 					imgAlt: "JPL Logo",
 					institution: "Jet Propulsion Laboratory",
 					jobTitle: "Electrical Systems Engineering",
-					dates: "September 2016 - July 2018",
-					description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+					dates: "September 2016 - July 2018 & Summer 2019",
+					description: "I worked as a year-round intern in the Electrical Systems Engineering group. My primary focus included the creation of circuit diagrams and functional block diagrams for the NISAR and Mars 2020 flight projects. I learned the basics of Model-Based Systems Engineering as applied to the development of large, complex systems such as spacecraft and rovers."
 				},
-				{ 
+				/*{ 
 					imgSrc: "css/images/coc.png",
 					imgAlt: "COC Logo",
 					institution: "College of the Canyons",
 					jobTitle: "College Assistant - Financial Aid",
 					dates: "September 2016 - July 2018",
 					description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
-				}
+				}*/
 			],
 			faqs: [
-				{
-					question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-					answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-				},
 				{
 					question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
 					answer: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -180,24 +203,25 @@ jQuery(document).ready(function($) {
 	// parse data for projects section
 	var projectsJSON = json.projects;
   	projectsJSON.forEach(function(projectsData) {
-  		var html = 
-  		`<div class='single_portfolio_text mx-2'>
-			<img src="${projectsData.preview.imgSrc}" />
-			<div class='portfolio_images_overlay text-center my-auto'>
-				<div class='space-header-wrapper d-flex align-items-center'>
-					<h6 class='space-header gallery-text'>${projectsData.title}</h6>
-				</div>
-				<p class='dates'>${projectsData.preview.dates}</p>`;
-				if (modalsEnabled) {
-					html += `<button type='button' class='btn btn-dark btn-lg' data-toggle='modal' data-target='#${modalPrefix}-${projectsData.id}'>View</button>`;
-				}
-			html += `</div></div>"`;
-
-  		$('#project-previews').append(html);
+  		if (projectsData.enabled) {
+	  		var html = 
+	  		`<div class='single_portfolio_text mx-2'>
+				<img src="${projectsData.preview.imgSrc}" />
+				<div class='portfolio_images_overlay text-center my-auto'>
+					<div class='space-header-wrapper d-flex align-items-center'>
+						<h6 class='space-header gallery-text'>${projectsData.title}</h6>
+					</div>
+					<p class='dates'>${projectsData.preview.dates}</p>`;
+					if (modalsEnabled) {
+						html += `<button type='button' class='btn btn-dark btn-lg' data-toggle='modal' data-target='#${modalPrefix}-${projectsData.id}'>View</button>`;
+					}
+				html += `</div></div>"`;
+			$('#project-previews').append(html);
+		}
+  		
 
   		if (modalsEnabled) {
   			var modalData = projectsData.modal;
-  			console.log(modalData);
 	  		var modal_html = 
 	  		`<div class="modal fade" id="${modalPrefix}-${projectsData.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		        <div class="modal-dialog modal-dialog-centered" role="document">
@@ -264,7 +288,34 @@ jQuery(document).ready(function($) {
         </div>`;
         $('#experiences').append(html);
   	});
+
+  	// work experience toggle
+
+  	if (json.experience.length > 2) {
+  		var btnHtml = 
+  		`<div class="row">
+	        <div class="col-lg-8 col-md-12 col-centered text-center">
+	          <a id="toggle_button" href="#more-exp" class="btn show-btn py-2 px-3">Show More</a>
+	        </div>
+	      </div>`;
+	    $('#experience').append(btnHtml);
+  	}
+
   	
+	var show_more = true;
+	$('#toggle_button').click(function() {
+		if(show_more) {
+			// add divs
+			$('.hide').addClass('show').removeClass('hide');
+			document.getElementById("toggle_button").innerText = "Show Less";			
+			show_more = false;
+		} else {
+			// remove div
+			$('.show').addClass('hide').removeClass('show');
+			document.getElementById("toggle_button").innerText = "Show More";
+			show_more = true;
+		}
+	}); 	
 
   	json.faqs.forEach(function(faq) {
   		var html =
@@ -276,6 +327,8 @@ jQuery(document).ready(function($) {
       	</div>`;
   		$('#faqs').append(html);
   	});
+
+
 
   	// slick carousel
 	$('.center').slick({
