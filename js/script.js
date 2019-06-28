@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
 						isPrivate: false,
 						githubLink: "github.com/ltrooney/quadcopter",
 						skills: "C++, Arduino, PID Controller, Motors, Power Systems",
-						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+						description: "I have spent over 200 hours designing, building, and testing a 450mm quadcopter. I purchased each part individually and wrote all of the Arduino-based flight controller code from scratch. During the design phase I performed power budget analysis, wrote a dynamics simulation, and added fault protection as a means of verifying that the system was going to work as intended. This is by far the largest physical project that I have ever worked on and it truly taught me the power of research and learning with a particular application in mind."
 					}	
 				},
 				{
@@ -53,7 +53,7 @@ jQuery(document).ready(function($) {
 					modal: {
 						isPrivate: false,
 						githubLink: "github.com/ltrooney/music_theory_app",
-						skills: "C++, Arduino, PID Controller, Motors, Power Systems",
+						skills: "Python, Music Theory",
 						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
 					}	
 				},
@@ -68,8 +68,8 @@ jQuery(document).ready(function($) {
 					modal: {
 						isPrivate: false,
 						githubLink: "github.com/ltrooney/hack-computer",
-						skills: "C++, Arduino, PID Controller, Motors, Power Systems",
-						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+						skills: "Java, Computer Architecture, Logic Gates, Operating Systems, Compilers",
+						description: "This project is a bottom-up build of a 16-bit computer architecture. The hardware components including the CPU and memory were build entirely in software, then unit tested for correctness. The assembler, virtual language parser, compiler, and operating system were written in Java."
 					}	
 				},
 				{
@@ -84,7 +84,7 @@ jQuery(document).ready(function($) {
 						isPrivate: false,
 						githubLink: "github.com/ltrooney/physics-engine",
 						skills: "C++, Arduino, PID Controller, Motors, Power Systems",
-						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+						description: "Rigid body kinematics simulation implemented in Java."
 					}	
 				},
 				{
@@ -98,8 +98,8 @@ jQuery(document).ready(function($) {
 					modal: {
 						isPrivate: true,
 						githubLink: null,
-						skills: "Python, Approximate Q-Learning, A* Search, Dijkstra's Algorithm",
-						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+						skills: "Python, Reinforcement Learning, A* Graph Search, Dijkstra's Algorithm, Markov Decision Processes (MDP), Bayes Net and Inference, Particle Filtering",
+						description: "Implemented various uninformed and informed pathfinding algorithms. Modeled Pacman as an adversarial agent which can collect all food in an environment while avoiding ghosts."
 					}	
 				},
 				{
@@ -113,8 +113,8 @@ jQuery(document).ready(function($) {
 					modal: {
 						isPrivate: false,
 						githubLink: "github.com/ltrooney/luke-rooney-website",
-						skills: "C++, Arduino, PID Controller, Motors, Power Systems",
-						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+						skills: "HTML, CSS, JavaScript, jQuery, Bootstrap",
+						description: "I built this static webpage from scratch."
 					}	
 				},
 				{
@@ -129,13 +129,13 @@ jQuery(document).ready(function($) {
 						isPrivate: true,
 						githubLink: null,
 						skills: "Java, Priority Queues, K-d Trees",
-						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+						description: "Bear Maps was a large project given in my data structures class. The project was intended for students to use various data structures to replicate a simplified, efficient version of Google Maps and its underlying algorithms for location searching and tile rendering."
 					}	
 				},
 				{
 					enabled: true,
 					id: "08",
-					title: "16-bit Adventure Game",
+					title: "16-Bit Adventure Game",
 					preview: {
 						dates: "April 2019",
 						imgSrc: "css/images/avatar.png"
@@ -143,8 +143,8 @@ jQuery(document).ready(function($) {
 					modal: {
 						isPrivate: true,
 						githubLink: null,
-						skills: "Java, Minimum Spanning Trees, Dijkstra's Algorithm, Disjoint Sets",
-						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+						skills: "Java, Minimum Spanning Trees, Dijkstra's Algorithm, Disjoint Sets, Software Engineering",
+						description: ""
 					}	
 				},
 				{
@@ -153,13 +153,28 @@ jQuery(document).ready(function($) {
 					title: "Quadcopter Motion Simulation",
 					preview: {
 						dates: "Mar 2019 - Apr 2019",
-						imgSrc: "css/images/code.jpeg"
+						imgSrc: "css/images/quad_motion_sim.png"
 					},
 					modal: {
 						isPrivate: false,
 						githubLink: "github.com/ltrooney/quadcopter",
-						skills: "Matlab",
-						description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
+						skills: "MATLAB, Dynamics Simulation, Control Theory",
+						description: "A simulation designed to visualize the dynamics of a quadcopter with customizable parameters. The final simulation reproduces the results obtained in Andrew Gibiansky's research titled Quadcopter Dynamics, Simulation, and Control."
+					}	
+				},
+				{
+					enabled: true,
+					id: "10",
+					title: "Handwritten Digit Classification",
+					preview: {
+						dates: "April 2019",
+						imgSrc: "css/images/digit_classification.png"
+					},
+					modal: {
+						isPrivate: true,
+						githubLink: null,
+						skills: "Python, Machine Learning, Perceptron, Logistic Regression, Neural Networks",
+						description: "Built a neural network to identify handwritten digits with up to 98% accuracy."
 					}	
 				},
 			],
@@ -168,6 +183,7 @@ jQuery(document).ready(function($) {
 					imgSrc: "css/images/jpl.jpg",
 					imgAlt: "JPL Logo",
 					institution: "Jet Propulsion Laboratory",
+					location: "Pasadena, CA",
 					jobTitle: "Electrical Systems Engineering",
 					dates: "September 2016 - July 2018 & Summer 2019",
 					description: "I worked as a year-round intern in the Electrical Systems Engineering group. My primary focus included the creation of circuit diagrams and functional block diagrams for the NISAR and Mars 2020 flight projects. I learned the basics of Model-Based Systems Engineering as applied to the development of large, complex systems such as spacecraft and rovers."
@@ -176,6 +192,7 @@ jQuery(document).ready(function($) {
 					imgSrc: "css/images/coc.png",
 					imgAlt: "COC Logo",
 					institution: "College of the Canyons",
+					location: "Valencia, CA",
 					jobTitle: "College Assistant - Financial Aid",
 					dates: "September 2016 - July 2018",
 					description: "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus."
@@ -279,9 +296,10 @@ jQuery(document).ready(function($) {
               </div>
               <div class="col-lg-8 col-md-8 col-sm-12">
                 <h4><strong>${experienceData.institution}</strong></h4>
-                <h6>${experienceData.jobTitle}</h6>
+                <h6 class="my-2"><i class="fas fa-map-marker-alt mr-2"></i>${experienceData.location}</h6>
+                <h6 class="mb-1">${experienceData.jobTitle}</h6>
                 <i>${experienceData.dates}</i>
-                <p class="mt-2">${experienceData.description}</p>
+                <p class="mt-3">${experienceData.description}</p>
               </div>
             </div>
           </div>
@@ -347,7 +365,7 @@ jQuery(document).ready(function($) {
 		{
 		  breakpoint: 1600,
 		  settings: {
-		    slidesToShow: 4
+		    slidesToShow: 3
 		  }
 		},
 		{
